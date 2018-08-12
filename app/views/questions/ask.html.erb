@@ -1,8 +1,19 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
-<h1>Tal to the coach! \o/</h1>
-<form action="ask" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <input type="text" name="question" placeholder="Talk to te coach!">
-  <input type="submit">
-</form>
+<h1 class="jumbotron text-center">Talk to the coach! \o/</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md 10 col-sm-8 col-xs-8 offset-1">
+      <div class="form-group">
+        <form action="ask" method="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Ask coach a question!</label>
+            <input type="text" class="form-control" name="question" placeholder="Talk to the coach!">
+          </div>
+          <input type="submit" class="btn btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

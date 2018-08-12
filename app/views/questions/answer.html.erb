@@ -1,4 +1,13 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
-<p> <%= @question %> </p>
-<p> <%= @answer %> </p>
+<h1 class="jumbotron text-center">Answer</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md 10 col-sm-8 col-xs-8 offset-1">
+      <p class="text-center"> <%= @question %> </p>
+      <p class="text-center"> <%= @answer %> </p>
+      <footer class="text-center">
+        <%= link_to "Ask another question", ask_path %>
+      </footer>
+    </div>
+  </div>
+</div>
